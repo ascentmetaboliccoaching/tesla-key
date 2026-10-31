@@ -1,0 +1,4 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,nofollow"><meta name="referrer" content="no-referrer"><meta name="viewport" content="width=device-width,initial-scale=1"><title>KingServer Tesla callback</title></head>
+<body style="font-family:sans-serif;max-width:40em;margin:2em auto;padding:0 1em"><h1>Tesla sign-in finished</h1><p>Copy this code and send it to SynKing:</p>
+<textarea id="c" readonly rows="4" style="width:100%;font-family:monospace"></textarea><p id="e"></p>
+<script>var p=new URLSearchParams(location.search);document.getElementById('c').value=p.get('code')||'(no code in address)';if(p.get('error'))document.getElementById('e').textContent='Error: '+p.get('error')+' '+(p.get('error_description')||'');</script></body></html>
